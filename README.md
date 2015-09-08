@@ -1,1 +1,2 @@
-# ejs-basics
+# EJS Basics
+
