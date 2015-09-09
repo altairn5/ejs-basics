@@ -45,19 +45,19 @@ EJS cleans the HTML out of your JavaScript with client-side templates. After EJS
 * Static caching of intermediate JS
 * Compatible with Express views
 
-#####Example
-```
-<% if (puppy) { %>
-  <h2><%= puppy.name %></h2>
-<% } %>
-```
-
 ####Tags
 
 * `<%` Scriptlet tag, for control-flow, no output
 *  `<%=` Outputs the value into the template (HTML escaped)
 * `<%-` Outputs the unescaped value into the template (embeddable as a string)
 * `%>` Plain ending tag
+
+#####Example
+```
+<% if (puppy) { %>
+  <h2><%= puppy.name %></h2>
+<% } %>
+```
 
 ####Resources:
 * [EJS on Github](https://github.com/mde/ejs)
