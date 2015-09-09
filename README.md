@@ -1,4 +1,3 @@
-
 # EJS Basics
 
 
@@ -64,3 +63,5 @@ EJS cleans the HTML out of your JavaScript with client-side templates. After EJS
 * [EJS on NPMJS](https://www.npmjs.com/package/ejs)
 * [Effective JavaScript templating](http://ejs.co/)
 
+=======
+# ejs-basics
