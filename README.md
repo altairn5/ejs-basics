@@ -25,7 +25,17 @@ EJS cleans the HTML out of your JavaScript with client-side templates. After EJS
 1. Install ejs: `npm install --save ejs`
 2. Require it in the project: `app.set('view engine', 'ejs')`
 3. Render a template: `res.render('index');`
-4. 
+4. Require an ejs partial *(optional)*: `<% include partials/head %>`
+5. Iterate through the data *(optional)*:
+ ```
+ <% foodItems.forEach(function(food) { %>
+  <li class='list-group-item'><%= food.name %>
+    <span class="label label-default"><%= food.yumminess%></span>
+    <button data-id="<%= food.id %>" onclick="deleteFood(this)" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  </li>
+<% }); %>
+ ```
+ 
 
 ####Features
 * Control flow: (`<% ... %>`)
