@@ -20,13 +20,14 @@ EJS cleans the HTML out of your JavaScript with client-side templates. After EJS
 
 ###EJS implementation with node
 
-####Steps *(courtesy of Ilias)*
+<!--####Steps *(courtesy of Ilias)*
 
 1. Install ejs: `npm install --save ejs`
 2. Require it in the project: `app.set('view engine', 'ejs')`
 3. Render a template: `res.render('index');`
 4. Require an ejs partial *(optional)*: `<% include partials/head %>`
 5. Iterate through the data *(optional)*:
+ 
  ```
  <% foodItems.forEach(function(food) { %>
   <li class='list-group-item'><%= food.name %>
@@ -35,7 +36,7 @@ EJS cleans the HTML out of your JavaScript with client-side templates. After EJS
   </li>
 <% }); %>
  ```
- 
+--> 
 
 ####Features
 * Control flow: (`<% ... %>`)
@@ -57,15 +58,6 @@ EJS cleans the HTML out of your JavaScript with client-side templates. After EJS
 *  `<%=` Outputs the value into the template (HTML escaped)
 * `<%-` Outputs the unescaped value into the template (embeddable as a string)
 * `%>` Plain ending tag
-* 
-
-###EJS integration with templating
-asdf
-
-###EJS Partials
-asdf
-
-
 
 ####Resources:
 * [EJS on Github](https://github.com/mde/ejs)
